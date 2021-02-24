@@ -1,0 +1,6 @@
+User-Agent: *
+
+Allow: /index.php
+
+Disallow: /panel_index.php
+Sitemap: http://www.fantavikings.it/sitemap.xml

@@ -1,0 +1,225 @@
+body {
+    background: #f1f4f7;
+}
+h1,h2,h3
+{
+    color:black;
+}
+.stats-block {
+    border: 1px solid #dadbda;
+    padding: 5%;
+    border-bottom: 0;
+    border-top: 0;
+}
+.status-box {
+    min-height: 320px;
+}
+.stats-container {
+    margin-top: 8%;
+    text-align: center;
+    border: 1px solid #e9ecf2;
+    padding: 1.5%;
+    background: white;
+    font-size: 20px;
+}
+.stats-block i {
+    font-size: 30px;
+    color: #2f86d4;
+}
+.characters-nav
+{
+    text-align:center;
+}
+.characters-nav img
+{
+    height: 61px;
+    border-radius: 4px;
+    border: 1px solid #2c1a0d;
+    max-width: 61px;
+    float:left;
+}
+.characters-img:hover
+{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: translatZ(0) scale(1.25);
+    transform: translatZ(0) scale(1.25);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.characters-not-filled
+{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border: 0;
+}
+.fa-refresh,.fa-plus
+{
+    font-size:30px;
+    margin-left: 25px;
+    margin-top:5px;
+    cursor:pointer;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.scores-details
+{
+    color:#646464;
+}
+.rule-box
+{
+    color:#d3d4d4;
+}
+.fa-plus
+{
+    color:#078f07;
+}
+.fa-refresh
+{
+    color:#c68c20;
+}
+.fa-plus:hover
+{
+    color:#0aa70a;
+}
+.fa-refresh:hover
+{
+    color:#db9c26;
+}
+.character-box
+{
+    margin-top:60px;
+}
+.character-rule-box{
+    max-height: 500px;
+    overflow:auto;
+    margin-top: 110px;
+    float:left;
+}
+#rule .btn
+{
+    margin-left: 15px;
+}
+#rules-pg
+{
+    max-height:250px;
+    overflow:auto;
+    overflow-x:hidden;
+}
+.flag{
+    margin-left:15px;
+    max-height:70px;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
+.flag:hover{
+     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: translatZ(0) scale(1.25);
+    transform: translatZ(0) scale(1.25);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+.cur-flag{
+     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+         -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: translatZ(0) scale(1.25);
+    transform: translatZ(0) scale(1.25);
+}
+#character-content
+{
+    padding:10px;
+}
+.panel-scores-box{
+    min-height: 280px;
+    background: rgba(204, 204, 204, 0.8);
+	padding-top:5px;
+	padding-bottom:5px;
+  	top: 50px;
+    float:left;
+}
+.panel-scores-box input[type="submit"]
+{
+  margin-top:5px;
+}
+.panel-scores-box textarea
+{
+  height:100px;
+}
+
+/*START CHARACTERS*/
+
+.gallery_product
+{
+    margin-left:10px;
+    height:340px;
+}
+.gallery_product input
+{
+    margin-top:10px;
+}
+.gallery_product input[type="number"], .gallery_product input[type="text"]
+{
+    background:#3a3a3a;
+    border-color:#242424;
+}
+.gallery_product img
+{
+    height:101px;
+    max-width:101px;
+}
+.new_character
+{
+    background:rgba(40, 104, 77, 0.68);
+}
+/*END CHARACTERS*/
+
+
+textarea {
+    resize: none;
+}
+.logscontainer {
+    margin-top: 114px;
+}
+.red-block {
+    background: rgba(162, 7, 7, .76);
+}
+.green-block {
+    background: rgba(34, 181, 39, .58);
+}
+.scorearrows {
+    font-size: 35px;
+    padding: 1%;
+}
+.fa-lock:hover,
+.fa-unlock-alt:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 10px) and (max-width: 680px) {
+    .stats-block {
+        min-height: 250px;
+    }
+}

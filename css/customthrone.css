@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: vikings;
+    src: url(../fonts/VIKING-N.woff);
+}
+@font-face {
+    font-family: titles;
+    src: url(../fonts/titles.woff);
+}
+
+header
+{
+	height:100%;
+	min-height:1700px;
+}
+body{
+	overflow-x:hidden;
+}
+#content {
+	background: url('../img/bgrank2.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:auto;
+}
+h2,h3
+{
+	font-family:titles;
+	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+
+}
+.spark {
+    background-color: #DE4A00;
+    font-family: 'Helvetica', sans-serif;
+    visibility: hidden;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 30%;
+    box-shadow: 0 0 5px #AB000B;
+}
+#clanicon
+{
+	 float: none;
+    margin: 0 auto;
+    width: 25%;
+    height: 25%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+    background: white;
+}
+#logo
+{
+	height:80px;
+}
+#titles
+{
+	color:white;
+	font-family:vikings;
+	text-align:center;
+}
+#corner
+{
+	padding:50px;
+}
+#throne
+{
+	width:40%;
+	margin:0 auto;
+	 -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
+}
+@media (max-width: 770px){
+	body{
+	    background-size: 100% 100%;
+	}
+}
+@media (max-width: 667px) {
+	.zoom{
+		overflow: hidden;
+		padding-bottom: 75%;
+	}
+	body
+	{
+		overflow:auto;
+		overflow-x:hidden;
+		background:#13001C;
+	}
+	header{
+	min-height:1700px
+	}
+	#logo
+	{
+		height:78px;
+	}
+	#corner
+	{
+		padding:0;
+	}
+}

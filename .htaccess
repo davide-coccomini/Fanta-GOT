@@ -1,0 +1,62 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -l
+RewriteRule ^.*$ - [L,QSA]
+
+
+#Rewrite for group rankings
+RewriteRule ^index/ranking/([a-zA-Z]+)/([0-9]+) index.php?p=ranking&s=$1&page=$2 [NC,L]
+
+#Rewrite for group rankings
+RewriteRule ^index/ranking/([a-zA-Z]+) index.php?p=ranking&s=$1 [NC,L]
+
+#Rewrite for rankings page
+RewriteRule ^index/ranking/([0-9]+) index.php?p=ranking&page=$1 [NC,L]
+
+#Rewrite for ranking episode page
+RewriteRule ^index/ranking-episodes/([0-9]+)/([0-9]+) index.php?p=ranking-episodes&ep=$1&page=$2 [NC,L]
+RewriteRule ^index/ranking-episodes/([0-9]+) index.php?p=ranking-episodes&ep=$1 [NC,L]
+
+#Rewrite for ranking bets page
+RewriteRule ^index/ranking-bets/([0-9]+) index.php?p=ranking-bets&page=$1 [NC,L]
+
+#Rewrite for ranking arena page
+RewriteRule ^index/ranking-arena/([0-9]+) index.php?p=ranking-arena&page=$1 [NC,L]
+
+
+#Rewrite homepage registration invitation
+RewriteRule ^index/home/1/(.*) index.php?p=home&sec=1&invite=$1 [NC,L]
+
+#Rewrite homepage password recover
+RewriteRule ^index/home/2/(.*) index.php?p=home&sec=2&r=$1 [NC,L]
+
+#Rewrite homepage
+RewriteRule ^index/home/([0-9a-zA-Z-_]+) index.php?p=home&sec=$1 [NC,L]
+
+#Rewrite for about donation
+RewriteRule ^index/about-donation/(.*) index.php?p=about-donation&email=$1 [NC,L]
+
+#Rewrite for market with pg parameter
+RewriteRule ^index/market/([0-9]+) index.php?p=market&pg=$1 [NC,L]
+
+#General rewrite for page only parameter
+RewriteRule ^index/([0-9a-zA-Z-_]+) index.php?p=$1 [NC,L]
+
+
+
+#Rewrite external pages
+RewriteRule ^sponsor sponsor.php [NC,L]
+RewriteRule ^countdown countdown.php [NC,L]
+RewriteRule ^rules rules.php [NC,L]
+RewriteRule ^throne throne.php [NC,L]
+RewriteRule ^cookies cookies.php [NC,L]
+
+
+#Caching
+
+<FilesMatch "\.(flv|ico|pdf|js|css|webp|jpg|png|avi|mov|ppt|doc|mp3|wmv|wav)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>

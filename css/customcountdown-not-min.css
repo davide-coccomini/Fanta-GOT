@@ -1,0 +1,141 @@
+
+body {
+	background: url(../img/bgcountdown.jpg) center center fixed;
+  background-size
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x:hidden;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+    font-family:Helvetica, Arial, sans-serif;
+}
+.logoindex
+{
+  background:url(../img/logored.png);
+  background-size:100% 100%;
+  height:100px;
+}
+#logoindex:hover
+{
+  -webkit-filter: brightness(108%); /* Safari */
+    filter: brightness(108%);
+}
+button
+{
+	margin-top:-8%;
+}
+.btn
+{
+	font-weight:bold;
+	height:78px;
+}
+.btn-primary
+{
+	background:rgb(12, 114, 125);
+	border-color:#001d26;
+	font-size:26px;
+}
+.btn-primary:hover,.btn-primary:focus, .btn-primary:active,.btn-primary:active:focus
+{
+	background:rgba(4, 140, 154, 0.89);
+	border-color:#001d26;
+}
+.intestazione
+{
+	text-align:center;
+	color:white;
+	font-weight:bold;
+}
+.countdown-container {
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index:-1;
+	margin-top:125px;
+}
+
+.clock-item
+{
+	margin-top:10px;
+}
+.clock-item .inner {
+	height: 0px;
+	padding-bottom: 100%;
+	position: relative;	
+	width: 100%;
+}
+
+.clock-canvas {
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: 50%;
+	height: 0px;
+	padding-bottom: 100%;
+}
+
+.text {
+	color: #fff;	
+	font-size: 30px;
+	font-weight: bold;	
+	margin-top: -50px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	width: 100%;
+}
+
+.text .val {
+	font-size: 50px;
+}
+
+.text .type-time {
+	font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.clock-item {
+		margin-bottom: 30px;		
+	}
+}
+
+@media  screen and (min-width: 10px) and (max-width: 680px){
+	#bodylogin{
+	 background: url(../img/bg.jpg) center center fixed;
+ 	 background-size
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x:hidden;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+    font-family:Helvetica, Arial, sans-serif
+	}
+	.logoindex
+	{ 	    
+		background:url(../img/logored.png) no-repeat;
+    	background-size:100%;
+		height:71px;
+	}
+	.btn
+	{
+		margin-top:-500px;
+	}
+	.clock
+	{
+		margin-top:308px;
+	}
+	.countdown-container
+	{
+		margin-top:321px;
+	}
+}
